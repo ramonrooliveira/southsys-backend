@@ -9,7 +9,7 @@ var express = require('express'),
   
 
 dotenv.config();
-var url = process.env.MONGOATLAS_URI;
+var url = process.env.MONGODB_URI;
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
 mongoose.connect(url); 
