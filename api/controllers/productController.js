@@ -5,10 +5,10 @@ var mongoose = require('mongoose'),
 
 exports.list_all_products = function(req, res) {
   Product.find({}, function(err, product) {
-    if (err)
-      res.send(err);
+    // if (err)
+    //   res.send(err);
     res.json(product);
-  });
+  }).catch( err => {throw new Error(err);} );
 };
 
 
