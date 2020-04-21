@@ -24,6 +24,7 @@ The app is hosted on Heroku, and can be accessed at [https://south-sys.herokuapp
 
 #### `/authenticate`
 To login. Receives URL encoded form with username and password;
+Available logins: admin (password: admin) | client (pasword: client)
 
 #### `/logout`
 To logout.
